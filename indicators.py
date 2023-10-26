@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import yfinance as yf
 import pandas as pd
-import mplfinance as mpf
+# import mplfinance as mpf
 import math
 import csv
 import os
