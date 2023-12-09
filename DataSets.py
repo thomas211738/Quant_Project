@@ -32,4 +32,4 @@ def create_df(ticker: str, start_date: str, end_date:str) -> pd.DataFrame:
     return data
 
 data = create_df("AAPL", "2022-01-01","2023-01-01")
-print(data.head())
+print(data.shape)
