@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import yfinance as yf
 import pandas as pd
-# import mplfinance as mpf
 import math
 import csv
 import os
@@ -105,7 +104,6 @@ def Bollinger_band(data_frame, window_size=30, num_std=2):
     nan_array[-len(signals):] = signals
 
     return nan_array
-
 
 
 def stochastic_oscillator(data_frame, period=15):
