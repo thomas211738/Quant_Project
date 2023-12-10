@@ -5,3 +5,4 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
 from sklearn.metrics import precision_score
 
+print('hi')
