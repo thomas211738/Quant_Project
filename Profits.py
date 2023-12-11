@@ -7,29 +7,22 @@ import csv
 
 def Calc_Profit(ticker, ones_list, investment_amount = 1):
 
-    invested = 0
-    profit = 0
-
     company_info = yf.Ticker(ticker)
     data = company_info.history('5y')
     data = data.iloc[-len(ones_list):]
 
     j = 0
     for index, row in data.iterrows():
-
         if ones_list[j][0] == 1:
-            invested += investment_amount
-            profit += (investment_amount/row['Open']) * (row['Close'] - row['Open'])
-
+            profit = (investment_amount / row['Open']) * (row['Close'] - row['Open'])
+            investment_amount += profit
         j += 1
 
-    return (invested, profit)
-
+    return (investment_amount, len(ones_list))
 
 companies = pd.read_csv('Resources/S&P500.csv')
 company_names = companies.iloc[:,1].to_list()
 company_tickers = companies.iloc[:,2].to_list()
-
 
 csv_list = []
 for i in range(246):
@@ -37,7 +30,7 @@ for i in range(246):
     try:
         company_data = create_df(company_tickers[i])
         ones_list, precision = predict(company_data, company_names[i])
-        investment_amount, profit = Calc_Profit(company_tickers[i], ones_list)
+        investment_amount, testing_days = Calc_Profit(company_tickers[i], ones_list)
     except ValueError as e:
         continue
 
@@ -46,7 +39,7 @@ for i in range(246):
         "company_ticker": company_tickers[i],
         "model_precision": precision,
         "investment_amount": investment_amount,
-        "profit": profit
+        "testing_days": testing_days
     }
     csv_list.append(data)
 
