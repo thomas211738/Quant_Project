@@ -26,6 +26,14 @@ As we can see, for each of the technical analysis indicators, they give a value 
 ## Machine Learning Model
 For the machine learning model, we used an LSTM neural network using keras in tensor flow. We trained 250 different models for the 250 companies that we chose. We first acquired 20 years' worth of stock data for each company and split it with 80% (16y) of the data to be trained on, and 20% (4y) of the data to be tested on. We also used the past 100 days of our data to predict the stock directionality one day in the future. We did this because we thought it would give us more accurate and better results since the model would have more data to analyze and work with. for our x data, we gave the model the past 100 days of our technical analysis indicator's values, and for the y data, we gave the model the stock directionality value for the next day. We also had an EPOCH of 10, meaning the model passed over the 16 years' worth of stock data 10 times. 
 
-## Model Anlysis
+## Model Analysis
+
+### Predictions
+
+To Test our model's accuracy, we used the last 20% (4y) of our data. We needed to find out when our model predicted the stock going up, and then compare those instances with whether the stock actually went up or not. To do this, we used the precision_score function from sklearn, and found that we had an average precision score of 56.77% for the 250 models. This means that for every time the model predicted the stock to go up, it would go up 56.77% of the time.
+### Profits
+ddd
+
+## Conclusion
 
 
