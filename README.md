@@ -28,11 +28,16 @@ For the machine learning model, we used an LSTM neural network using keras in te
 
 ## Model Analysis
 
-### Predictions
+### Accuracy
 
-To Test our model's accuracy, we used the last 20% (4y) of our data. We needed to find out when our model predicted the stock going up, and then compare those instances with whether the stock actually went up or not. To do this, we used the precision_score function from sklearn, and found that we had an average precision score of 56.77% for the 250 models. This means that for every time the model predicted the stock to go up, it would go up 56.77% of the time.
+To test our model's accuracy, we used the last 20% (4y) of our data. We needed to find out when our model predicted the stock going up, and then compare those instances with whether the stock actually went up or not. To do this, we used the precision_score function from sklearn, and found that we had an average precision score of 56.77% for the 250 models. This means that for every time the model predicted the stock to go up, it would go up 56.77% of the time.
+
 ### Profits
-ddd
+
+To determine the profits or ROI someone would gain from applying this model to actual trading, we started by investing $1 in each company. Then, each time the model predicted the price going up, we would invest this $1 for the day. We would then keep updating this investment through the 4 years' worth of data to determine what our final investment is worth and ROI.
+
+
+We found that the average ROI was 169% over the past 4 years. Our Highest ROI was for Apple, which had an ROI of 450% over the past 4 years. Our lowest ROI was for Coca-Cola, which had an ROI of 96%. Within that same time frame, 
 
 ## Conclusion
 
