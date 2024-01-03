@@ -45,4 +45,4 @@ While the ROI for Apple was 450%, this was because we were originally using Appl
 
 ## Conclusion
 
-In conclusion, this project 
+In conclusion, this project helped us identify that technical analysis indicators play a big factor in determining future stock directionality. While many improvements could be made to this project, we were still able to learn a lot about machine learning, finance, and the intersection between them. We are very interested in the field of quantitative finance and want to pursue it more in the future. 
