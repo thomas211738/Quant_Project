@@ -7,7 +7,7 @@ We wanted to see if technical analysis indicators were good predictors of a stoc
 ## Technical Analysis Indicators
 For this project, we used the following technical analysis indicators as features:
 
-Simple Moving Average (SMA)
+**Simple Moving Average (SMA)**
 Exponential Moving Average (EMA)
 Relative Strength Index (RSI)
 Moving Average Convergence Divergence (MACD)
