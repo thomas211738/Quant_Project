@@ -21,5 +21,5 @@ For this project, we used the following technical analysis indicators as feature
 ## Machine Learning Model
 For the machine learning model, we used an LSTM neural network using keras in tensor flow. We trained 250 different models for the 250 companies that we chose. We first acquired 20 years worth of stock data for each company and split it with 80% (16y) of the data to be trained on, and 20% (4y) of the data to be tested on. We also wanted to use the past 100 days of the or our training data set, our x values were 
 
-![Alt Text](TAI EX.png)
+![Alt Text](TAIEX.png)
 
