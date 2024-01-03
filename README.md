@@ -37,8 +37,12 @@ To test our model's accuracy, we used the last 20% (4y) of our data. We needed t
 To determine the profits or ROI someone would gain from applying this model to actual trading, we started by investing $1 in each company. Then, each time the model predicted the price going up, we would invest this $1 for the day. We would then keep updating this investment through the 4 years' worth of data to determine what our final investment is worth and ROI.
 
 
-We found that the average ROI was 169% over the past 4 years. Our Highest ROI was for Apple, which had an ROI of 450% over the past 4 years. Our lowest ROI was for Coca-Cola, which had an ROI of 96%. Within that same time frame, 
+We found that the average ROI was 169% over the past 4 years. Our Highest ROI was for Apple, which had an ROI of 450% over the past 4 years. Our lowest ROI was for Coca-Cola, which had an ROI of 96%. Within that same 4 year period, the S&P 500 had an ROI of 45%. This means we had an average α of 124%. 
+
+## Future improvements
+
+While the ROI for Apple was 450%, this was because we were originally using Apple stock data when we were creating our model and so the model for it is quite overfit. In the future, we could try adding more features for the model to work with rather than removing ones that make the model less accurate. Another thing we can change is instead of the technical analysis indicators being restricted to values of -1, 0, and 1, we can make them have their actual values to let the model evaluate them better. Lastly, one thing we didn't calculate in this project was the Sharpe ratio to measure the performance of our investment in comparison to its risk. We can look into this in the future to measure the excess return of our investment per unit of risk. 
 
 ## Conclusion
 
-
+In conclusion, this project 
