@@ -7,13 +7,14 @@ We wanted to see if technical analysis indicators were good predictors of a stoc
 ## Technical Analysis Indicators
 For this project, we used the following technical analysis indicators as features:
 
-**Simple Moving Average (SMA)**
-Exponential Moving Average (EMA)
-Relative Strength Index (RSI)
-Moving Average Convergence Divergence (MACD)
-Bollinger Bands
-Stochastic Oscillator
-Ichimoku Cloud Signals
-Aroon Indicator
-Williams %R
-On-Balance Volume (OBV)
+1. Simple Moving Average (SMA)
+2. Exponential Moving Average (EMA)
+
+4. Relative Strength Index (RSI)
+5. Moving Average Convergence Divergence (MACD)
+6. Bollinger Bands
+7. Stochastic Oscillator
+8. Ichimoku Cloud Signals
+9. Aroon Indicator
+10. Williams %R
+11. On-Balance Volume (OBV)
